@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">QByte</string>
+    <string name="admin_text">Admin</string>
+    <string name="email">Enter your email</string>
+    <string name="password">Enter your password</string>
+    <string name="loginButton">Login</string>
+    <string name="loginImg">imgLogin</string>
+    <string name="logoImg">imgLogo</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="create_admin_account">Create Admin Account</string>
+    <string name="enter_your_full_name">Enter your full name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="logout">Logout</string>
+    <string name="admin">Admin</string>
+    <string name="user">User</string>
+    <string name="welcome">Welcome</string>
+    <string name="create_user_account">Create User Account</string>
+    <string name="register">Register</string>
+    <string name="enter_your_fullname">Enter your fullname</string>
+    <string name="account_information">Account Information</string>
+    <string name="date">Account Created: October 10, 2024</string>
+</resources>
