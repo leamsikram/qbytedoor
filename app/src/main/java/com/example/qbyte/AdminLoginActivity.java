@@ -77,7 +77,7 @@ public class AdminLoginActivity extends AppCompatActivity {
                             assert user != null;
 
                             // Retrieve user document from Firestore to check role
-                            db.collection("users").document(user.getUid())
+                            db.collection("admin").document(user.getUid())
                                     .get()
                                     .addOnCompleteListener(task1 -> {
                                         if (task1.isSuccessful()) {
@@ -101,7 +101,7 @@ public class AdminLoginActivity extends AppCompatActivity {
                                                 }
                                             } else {
                                                 // No user data found
-                                                Toast.makeText(AdminLoginActivity.this, "User data not found.", Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(AdminLoginActivity.this, "Access Denied. Not an Admin.", Toast.LENGTH_SHORT).show();
                                             }
                                         } else {
                                             // Firestore retrieval failed
