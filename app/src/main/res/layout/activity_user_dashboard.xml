@@ -32,24 +32,14 @@
         android:layout_below="@id/qbyteLogo"
         android:layout_marginTop="20dp"/>
 
-    <!-- User Details -->
-    <TextView
-        android:id="@+id/user_details"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello User"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/aboutUs"
-        android:layout_marginTop="50dp"
-        android:textSize="18sp"
-        />
+
 
     <!-- Switch -->
   <androidx.appcompat.widget.SwitchCompat
       android:id="@+id/switchButton"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_below="@id/user_details"
+      android:layout_below="@id/aboutUs"
       android:layout_marginTop="80dp"
       android:layout_centerHorizontal="true"
       android:thumb="@drawable/thumb"
