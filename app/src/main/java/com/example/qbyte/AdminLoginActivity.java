@@ -101,7 +101,7 @@ public class AdminLoginActivity extends AppCompatActivity {
                                                 }
                                             } else {
                                                 // No user data found
-                                                Toast.makeText(AdminLoginActivity.this, "Access Denied. Not an Admin.", Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(AdminLoginActivity.this, "User data not found.", Toast.LENGTH_SHORT).show();
                                             }
                                         } else {
                                             // Firestore retrieval failed

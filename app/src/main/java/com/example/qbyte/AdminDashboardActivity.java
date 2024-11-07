@@ -16,7 +16,6 @@ public class AdminDashboardActivity extends AppCompatActivity {
 
     FirebaseAuth auth;
     ImageView button;
-    TextView textView;
     FirebaseUser user;
     CardView createUserCard, memberInfoCard;  // Declare the CardView for the "Create User Account" module
 
@@ -27,20 +26,12 @@ public class AdminDashboardActivity extends AppCompatActivity {
 
         auth = FirebaseAuth.getInstance();
         button = findViewById(R.id.logout);
-        textView = findViewById(R.id.user_details);
         createUserCard = findViewById(R.id.module_create_user);  // Initialize the CardView
-        memberInfoCard = findViewById(R.id.module_member_info);
-
+        memberInfoCard = findViewById(R.id.module_member_info);  // Initialize the CardView
 
         user = auth.getCurrentUser();
 
-        if (user == null) {
-            Intent intent = new Intent(getApplicationContext(), StartActivity.class);
-            startActivity(intent);
-            finish();
-        } else {
-            textView.setText(user.getEmail());
-        }
+
 
         button.setOnClickListener(v -> {
             FirebaseAuth.getInstance().signOut();
@@ -59,5 +50,7 @@ public class AdminDashboardActivity extends AppCompatActivity {
             Intent intent = new Intent(AdminDashboardActivity.this, MemberInfoActivity.class);
             startActivity(intent);
         });
+
     }
+
 }
