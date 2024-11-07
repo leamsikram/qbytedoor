@@ -23,4 +23,6 @@
     <string name="members_information">Members Information</string>
     <string name="blocked_message">Your account is blocked. Please contact support.</string>
     <string name="blocked">Blocked</string>
+    <string name="pending">Pending Approval</string>
+    <string name="review">We\'re reviewing your account. Please wait for your account to be approved by an administrator.</string>
 </resources>
