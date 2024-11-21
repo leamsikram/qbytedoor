@@ -25,4 +25,6 @@
     <string name="blocked">Blocked</string>
     <string name="pending">Pending Approval</string>
     <string name="review">We\'re reviewing your account. Please wait for your account to be approved by an administrator.</string>
+    <string name="logs">Activity Logs</string>
+    <string name="delete">Delete</string>
 </resources>
